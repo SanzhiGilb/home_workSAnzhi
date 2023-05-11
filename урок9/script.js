@@ -32,3 +32,5 @@ let info = (250+100+70)*365;
 
 console.log(menu);
 console.log(cash+info);
+menu.pop();
+menu.pop();
