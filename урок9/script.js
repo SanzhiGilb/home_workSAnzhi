@@ -1,21 +1,26 @@
-let soap= {
+let soap= [];
 
-    ing1: 'potato',
-    ing2: 'luc',
-    ing3: 'meat',
-    ing4: 'water',
-    ing5: 'spagetti'
-};
-let eggs= {
+soap.push('potato');
+soap.push('luc');
+soap.push('meat');
+soap.push('carrot');
+soap.push('macaroni');
 
-    ing1: 'eggs',
-    ing2: 'oil'
-};
-let buuzy={
 
-    ing1: 'dough',
-    ing2: 'minced meat'
-};
+let eggs= [];
+
+    eggs.push('eggs');
+    eggs.push('oil');
+
+
+let buuzy=[];
+
+buuzy.push('dough');
+buuzy.push('minced meat');
+
+console.log(soap);
+
+/*
 let menu = [];
 
 menu.push('buuzy (35min), 70rub za sht');
@@ -33,4 +38,4 @@ let info = (250+100+70)*365;
 console.log(menu);
 console.log(cash+info);
 menu.pop();
-menu.pop();
+menu.pop();*/
