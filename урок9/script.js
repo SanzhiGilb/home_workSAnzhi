@@ -1,36 +1,41 @@
-let soap= {
-
-    ing1: 'potato',
-    ing2: 'luc',
-    ing3: 'meat',
-    ing4: 'water',
-    ing5: 'spagetti'
+let bludo1={
+    ArraySoap: ['potato','meat','carrot','macaron','onion'],
+    time: 40,
+    price: 350
 };
-let eggs= {
 
-    ing1: 'eggs',
-    ing2: 'oil'
+let bludo2={
+    ArrayEggs: ['eggs','oil','onion'],
+    time: 15,
+    price: 150
 };
-let buuzy={
 
-    ing1: 'dough',
-    ing2: 'minced meat'
+let bludo3={
+    Arraybuuzy: ['dough','minced-meat'],
+    time: 35,
+    price: 70
 };
-let menu = [];
+// Вывод на экран
+/*document.write("<h3>Блюда</h3>");
+for(let i=0; i< bludo1.ArraySoap.length; i++)
+document.write(bludo1.ArraySoap[i] + "<br/>");*/
 
-menu.push('buuzy (35min), 70rub za sht');
-menu.push('eggs (10min), 100rub');
-menu.push('soap (30min), 250rub ');
+// Массив из блюд
+let menu= ['bludo1','bludo2','bludo3'];
 
+// Удаление блюда из массива
 menu.pop();
-delete soap.ing4;
-menu.unshift('soap (35min), 250rub');
 
+// Возвращение уд.блюда, нл вперед и удаление одного ингредиента
+menu.unshift(bludo3);
+bludo3.Arraybuuzy.pop();
 
-let cash = 'Cash =';
-let info = (250+100+70)*365;
+// Рассчет сколько заработаю на блюдах
+bludo1.price *365;
+bludo2.price *365;
+bludo3.price *365;
 
-console.log(menu);
-console.log(cash+info);
-menu.pop();
-menu.pop();
+// Вывод на сайт
+document.write("<h3>МЕНЮ</h3>");
+for(let i=0; i< menu.length; i++)
+document.write(menu[i]+ "<br/>");
