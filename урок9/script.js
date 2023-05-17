@@ -1,41 +1,41 @@
-let soap= [];
+let bludo1={
+    ArraySoap: ['potato','meat','carrot','macaron','onion'],
+    time: 40,
+    price: 350
+};
 
-soap.push('potato');
-soap.push('luc');
-soap.push('meat');
-soap.push('carrot');
-soap.push('macaroni');
+let bludo2={
+    ArrayEggs: ['eggs','oil','onion'],
+    time: 15,
+    price: 150
+};
 
+let bludo3={
+    Arraybuuzy: ['dough','minced-meat'],
+    time: 35,
+    price: 70
+};
+// Вывод на экран
+/*document.write("<h3>Блюда</h3>");
+for(let i=0; i< bludo1.ArraySoap.length; i++)
+document.write(bludo1.ArraySoap[i] + "<br/>");*/
 
-let eggs= [];
+// Массив из блюд
+let menu= ['bludo1','bludo2','bludo3'];
 
-    eggs.push('eggs');
-    eggs.push('oil');
-
-
-let buuzy=[];
-
-buuzy.push('dough');
-buuzy.push('minced meat');
-
-console.log(soap);
-
-/*
-let menu = [];
-
-menu.push('buuzy (35min), 70rub za sht');
-menu.push('eggs (10min), 100rub');
-menu.push('soap (30min), 250rub ');
-
+// Удаление блюда из массива
 menu.pop();
-delete soap.ing4;
-menu.unshift('soap (35min), 250rub');
 
+// Возвращение уд.блюда, нл вперед и удаление одного ингредиента
+menu.unshift(bludo3);
+bludo3.Arraybuuzy.pop();
 
-let cash = 'Cash =';
-let info = (250+100+70)*365;
+// Рассчет сколько заработаю на блюдах
+bludo1.price *365;
+bludo2.price *365;
+bludo3.price *365;
 
-console.log(menu);
-console.log(cash+info);
-menu.pop();
-menu.pop();*/
+// Вывод на сайт
+document.write("<h3>МЕНЮ</h3>");
+for(let i=0; i< menu.length; i++)
+document.write(menu[i]+ "<br/>");
