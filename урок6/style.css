@@ -1,0 +1,34 @@
+        <style>
+            .body {
+                background-color: black;
+            }
+            .h1 {
+                font-family: "Times New Roman", bold;
+                color: white;
+                font-size: 30px;
+            }
+            .p {
+                font-family: "Times New Roman", cursive;
+                font-size: 15px;
+            }
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                width: 25%;
+            }
+            .card:hover {
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+            .container {
+                padding: 2px 16px;
+            }
+            .flex-conteiner {
+                display: flex;
+                width: 100%;
+            }
+            @media screen and (max-width:450px) {
+                flex-container {
+                    padding: auto;
+                }
+            }
+        </style>
