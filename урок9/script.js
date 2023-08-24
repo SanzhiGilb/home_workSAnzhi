@@ -21,7 +21,10 @@ for(let i=0; i< bludo1.ArraySoap.length; i++)
 document.write(bludo1.ArraySoap[i] + "<br/>");*/
 
 // Массив из блюд
-let menu= ['bludo1','bludo2','bludo3'];
+let menu= [];
+menu.push(bludo1);
+menu.push(bludo2);
+menu.push(bludo3);
 
 // Удаление блюда из массива
 menu.pop();
