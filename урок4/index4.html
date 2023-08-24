@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Способы позиционированния</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style type="text/css">
+			.wrapper {
+               background-color: red;
+               color: white;
+             }
+            .text2 {
+               background-color: green;
+             }/*первое*/
+
+            .inline {
+              display: inline-block;
+              color: white;
+             }
+            .red {
+              background-color: red;
+             }
+            .blue {
+               background-color: blue;
+             }/*второе*/
+
+            .invisible {
+               display: none;
+             }/*третье*/
+
+            .flex-container {
+              display: flex;
+              font-size: 20px;
+              flex-wrap: wrap; /* отвечает за сворачивание (создание новой строки, если закончилось место)*/
+              width: 100px;
+              border: 1px solid blue;
+             }
+            .item {
+              border: 1px solid red;
+              padding: 5px;
+             }/* флексконтейнер*/
+
+
+            .item2 {
+               width: 100px;
+               height: 100px;
+               border: 1px solid red;
+             }
+            .relative {
+               position: relative;
+               top: -10px;
+               left: 15px;
+             }/*относительное позиционирование*/
+
+            .item3 {
+               width: 100px;
+               height: 100px;
+               border: 1px solid red;
+             }
+            .relative2 {
+               position: absolute;
+               top: 50px;
+               left: 50px;
+             }
+
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+         <div>Привет! Я базовый элемент 1</div>
+         <div class="text2">Я тоже, но номер 2. И наша ширина 100%. Мой фон перекрывает красный фон родителя, потому что я вложен в него</div>
+        </div>
+        <div>
+         <div class="inline red">
+           Я инлайн блок
+         </div>
+         <div class="inline blue">
+           Я тоже
+         </div>
+        </div>
+        <div>
+        	тут невидимый блок внизу
+        	<div class="invisible">
+        		Я невидимый блок :)
+        	</div>
+        </div>
+            }
+        <div class="flex-container">
+        	<div class="item">4</div>
+            <div class="item">3</div>
+            <div class="item">2</div>
+            <div class="item">1</div>
+            <div class="item">8</div>
+            <div class="item">7</div>
+            <div class="item">6</div>
+            <div class="item">5</div>
+            <div class="item">9</div>	
+        </div>
+        <div>
+         <div class="item2"> статичный </div>
+         <div class="item relative"> относительный </div>
+         <div class="item2"> статичный </div>
+        </div>
+        <div>
+         <div class="item3"> статичный </div>
+         <div class="item relative2"> абсолютный </div>
+         <div class="item3"> статичный </div>
+        </div>
+
+	</body>
+</html>
